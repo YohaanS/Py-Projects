@@ -3,14 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>My Python-Django/HTML Homepage</title>
-        <link rel="stylesheet" href="calculateApp/templates/homestyle.css">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'homestyle.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     </head>
     <body>
 
     <h1>Django Project Homepage</h1>
-
+        <span>
     <h2>Projects</h2>
-
     <ul>
         <li>Calculator</li>
         <br>
@@ -20,6 +25,8 @@
         <br>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNWB5mp-G0kLgSg-PG4vTclsDxZ63_mcWN8Q&s" alt="Cartoon Soda Vending Machine Image" width='124'>
     </ul>
-    
+    <h3>Access Projects</h3>
+    <button><a href="http://127.0.0.1:8000/calculateApp/">Calculator</a></button>
+    <button><a href="">Soda Vending Machine</a></button>
     </body>
 </html>
