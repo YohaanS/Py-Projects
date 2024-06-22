@@ -1,1 +1,140 @@
+h1 {
+    color: rgb(37, 75, 129);
+    font-family: "Playwrite IS", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    font-size: 47px;
+}
 
+h2 {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    color: rgb(145, 33, 95);
+    font-size: 42px;
+    font-style: italic;
+    text-align: center;
+}
+
+body {
+    background: rgb(6, 36, 0);
+    background: linear-gradient(90deg, rgba(24, 102, 9, 0.723) 14%, rgba(10, 99, 112, 0.664) 50%, rgba(192, 0, 255, 0.4402354691876751) 79%);
+}
+
+ul li {
+    font-size: 32px;
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    padding-top: 1cm;
+}
+
+img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+}
+
+button:before {
+    content: "";
+    background: linear-gradient( 45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+button:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+}
+
+.container {
+    padding: 0;
+    /* Ensure no padding on the container */
+}
+
+.box {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.content {
+    overflow: hidden;
+    /* Clear the float */
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 220px);
+    /* Adjust the width to fit alongside the floated box */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul img {
+    display: block;
+    margin: 10px 0;
+}
