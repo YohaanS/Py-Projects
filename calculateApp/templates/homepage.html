@@ -13,18 +13,29 @@
     </head>
     <body>
         <h1><u>Django Project Homepage</u></h1>
-        <h2><u>All Projects</u></h2>
-        <div class="container clearfix">
-            <div class="box"></div><div class="content">
-                <button type="button" class="button-85"><span>Calculator</span></button>
-            </div>
-        </div>
+        <h2><u>Projects</u></h2>
+        <div class="cen">
+        <!-- HTML !--><button class="button-64" role="button" id="project-button"><span class="spa">NextProj</span></button>
         <ul>
-            <li>Calculator</li>
+            <div class="cen" id="cal">
+                <div class="container">
+                <li>Calculator<strong>:</strong></li><button type="button" style="margin-left: 0.2cm;"><span class="spa"><a href="/calculateApp/" style="text-decoration: none;">CALC</a></span></button>
+                </div>
+            <br>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7FT5sGDnxV1Q3-JI_w6tPAlGPesQBrIGrGQ&s" alt="Basic Cartoon Calculator Image" width='104'>
-            <li>Soda Vending Machine</li>
+            </div>
+            <div class="cen" id="soda">
+            <div class="container">
+            <li>Soda Vending Machine<strong>:</strong></li>
+            <button><span class="spa">Soda</span></button>
+            </div>
+            <br>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNWB5mp-G0kLgSg-PG4vTclsDxZ63_mcWN8Q&s" alt="Cartoon Soda Vending Machine Image" width='124'>
+        </div>
         </ul>
-        <h3>Access Projects</h3>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        {% load static %}
+        <script src="{% static 'homescript.js' %}" defer></script>
+        
     </body>
 </html>

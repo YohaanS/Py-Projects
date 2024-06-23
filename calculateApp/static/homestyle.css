@@ -50,9 +50,15 @@ button {
     touch-action: manipulation;
     width: 100px;
     height: 35px;
-    text-align: center;
-    vertical-align: middle;
-    float: right;
+}
+
+.spa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    text-align: justify;
 }
 
 button:before {
@@ -96,45 +102,24 @@ button:after {
     border-radius: 10px;
 }
 
-span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 17px;
-}
-
 .container {
-    padding: 0;
-    /* Ensure no padding on the container */
+    display: flex;
+    align-items: center;
 }
 
-.box {
-    float: left;
-    width: 200px;
-    height: 100px;
-    margin-right: 20px;
+button {
+    margin-top: 1cm;
+    padding-right: 1cm;
 }
 
-.content {
-    overflow: hidden;
-    /* Clear the float */
-    display: inline-block;
-    vertical-align: top;
-    width: calc(100% - 220px);
-    /* Adjust the width to fit alongside the floated box */
+.cen {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-ul img {
-    display: block;
-    margin: 10px 0;
+a:visited {
+    text-decoration: none;
+    color: white;
 }
