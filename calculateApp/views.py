@@ -6,3 +6,6 @@ def homepage(request):
 
 def calculate(request):
     return render(request, "calculator.html")
+
+def firstpage(request):
+    return render(request, "calculator.html")

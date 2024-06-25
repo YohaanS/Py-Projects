@@ -20,5 +20,6 @@ from calculateApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('calculateApp/', include('calculateApp.urls')),
-    path('', views.homepage)
+    path('', views.firstpage),
+    path('/homepage', views.homepage)
 ]
