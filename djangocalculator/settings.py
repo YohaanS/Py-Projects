@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'djangocalculator.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangoproj',
+        'NAME': 'root$djangoproj',
         'HOST': 'localhost',
         'USER': 'root',
         'PASSWORD': 'yohaan1279'
