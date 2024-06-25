@@ -8,4 +8,4 @@ def calculate(request):
     return render(request, "calculator.html")
 
 def firstpage(request):
-    return render(request, "calculator.html")
+    return render(request, "firstpage.html")
