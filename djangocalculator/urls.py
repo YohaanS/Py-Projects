@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('calculateApp/', include('calculateApp.urls')),
     path('', views.firstpage),
-    path('homepage', views.homepage)
+    path('homepage', views.homepage),
+    path('Signup', views.signup)
 ]
